@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>André's Portfolio Page</title>
+    <meta name="description" content="My personal website and portfolio page">
+    <meta name="author" content="André Pinho">
+
+    <meta property="og:title" content="André's Portfolio Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="My personal website and portfolio page" <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/_global.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/899870ab75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <div id="topnav" class="row row-cols-1 safe-margins" onclick="navBarClick()">
+        <i class="fa-solid fa-bars col fa-2x"></i>
+    </div>
+
+    <!-- Nav Menu -->
+    <div id="navmenu">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"><i class="fa fa-close"></i></a>
+        <a href="#front-page" onClick="closeNav()">Home</a>
+        <a href="#description" onClick="closeNav()">Description</a>
+        <a href="#skills" onClick="closeNav()">Skills</a>
+        <a href="#work" onClick="closeNav()">Work</a>
+    </div>
+
+    <!-- Front-Page -->
+    <section id="front-page" class="section safe-margins">
+        <div id="front-page-body" class="section-element">
+            <h1>Full-stack Developer</h1>
+            <h2>I design and develop all type of applications</h2>
+            <img class="img-code" src="./resources/imgs/html_book.jpg" alt="code" />
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section id="description">
+        <div id="description-body">
+            <h1>Hi, I'm Andé. Welcome to my site!</h1>
+            <p>I worked in different areas inside computer science, but since I started my journey at Web
+                development I
+                found my passion. I already have experience doing Full-stack development with several projects with
+                different companies that I worked. I am passionate about my job, curious and a forever learner.</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="box">
+            <div class="skills-columns">
+                <div class="skill-column">
+                    <i class="fa fa-icon"></i>
+                    <h1>Full-stack Developer</h1>
+                    <p>
+                        I have experience on building all kinds of software. I enjoy bringing new ideas to life in the
+                        browser and making sure I know all the process involved.
+                    </p>
+                    <h2 class="header-highlight">Languages, Frameworks and Tools:</h2>
+                    <p>
+                        HTML, CSS, JavaScript (JS), Typescript (TS), Angular, Node.JS, C#, SASS, Jenkins, SQL, MongoDB
+                    </p>
+                    <h2 class="header-highlight">Stats and soft-skills:</h2>
+                    <ul>
+                        <li>5+ years of experience</li>
+                        <li>Different work areas explored</li>
+                        <li>5+ years solid experience on Full-stack development</li>
+                        <li>Easy adaptation to different environments</li>
+                        <li>Team work</li>
+                        <li>Good communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+
+    <!-- Work -->
+    <section id="work">
+        <div class="work-container">
+            <div class="columns">
+                <div class="column">
+                    <h3>I have worked with this awesome companies</h3>
+                </div>
+            </div>
+            <div class="client-grid">
+                <div class="columns">
+                    <div class="column">
+                        <!-- albatroz -->
+                        <img class="work-logo" src="resources/imgs/albatroz.jpeg" alt="albatroz" />
+                    </div>
+                    <div class="column">
+                        <!-- border -->
+                        <img class="work-logo" src="resources/imgs/border.jpeg" alt="border" />
+                    </div>
+                    <div class="column">
+                        <!-- vodafone -->
+                        <img class="work-logo" src="resources/imgs/vodafone.png" alt="vodafone" />
+                    </div>
+                    <div class="column">
+                        <!-- qevo -->
+                        <img class="work-logo" src="resources/imgs/qevo.svg" alt="qevo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer ( Quote, and links to social media )-->
+    <section id="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h3>Contact me or follow me on social media</h3>
+                </div>
+            </div>
+            <div class="social">
+                <p>
+                    <a class="button" href="https://twitter.com/Pinhoa13" target="_blank">
+                        <i class="fa fa-twitter fa-4x"></i>
+                    </a>
+                    <a class="button" href="https://www.linkedin.com/in/andr%C3%A9-pinho-174932111/" target="_blank">
+                        <i class="fa fa-linkedin fa-4x"></i>
+                    </a>
+                    <a class="button" href="https://github.com/Miglas13" target="_blank">
+                        <i class="fa fa-github fa-4x"></i>
+                    </a>
+                    <a class="button" href="mailto:andremsp95@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope fa-4x"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<script>
+    function navBarClick() {
+        let navMenuElement = document.getElementById('navmenu');
+        if (navMenuElement.style.display === "block") {
+            navMenuElement.style.display = "none";
+        } else {
+            navMenuElement.style.display = "block";
+        }
+    }
+
+    function closeNav() {
+        document.getElementById('navmenu').style.display = "none";
+    }
+
+</script>

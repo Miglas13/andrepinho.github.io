@@ -1,0 +1,243 @@
+/**
+General styles for the portfolio page
+**/
+
+body {
+    font-family: 'europa', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.safe-margins {
+    padding: 2rem;
+}
+
+#topnav i {
+    text-align: right;
+    padding: 11px 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#navmenu {
+    width: 250px;
+    margin-left: 250px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transition: all 0.25s;
+}
+
+#navmenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#navmenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#navmenu a:hover {
+    color: #f1f1f1;
+}
+
+.overlay {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#front-page {
+    padding: 11px 20px;
+}
+
+#front-page-footer {
+    padding: 0 1.5rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.section-element {
+    display: block;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.box {
+    -webkit-box-flex: 1;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgb(129 133 135 / 50%), 0 0 0 1px #e6ecf8;
+    color: #141c3a;
+    display: block;
+    border-radius: 12px;
+    padding: 0;
+    margin: auto;
+    width: auto;
+    flex-grow: 1;
+    margin-top: -65px;
+}
+
+h1, h2 {
+    margin-bottom: 1.5rem !important;
+}
+
+.img-code {
+    width: 600px;
+    margin: 2rem 0;
+}
+
+.container {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#description {
+    background-color: rgb(18, 18, 156);
+    color: white;
+    padding: 5rem 1.5rem;
+
+}
+
+#description-body {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    #description-body {
+        padding: 30px 10rem;
+    }
+}
+
+#skills {
+    padding-bottom: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.skills-column {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: -0.75rem;
+}
+
+.skill-column {
+    display: block;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 65px 15px;
+}
+
+@media only screen and (min-width: 900px) {
+    .skill-column {
+        padding: 30px 15rem;
+    }
+}
+
+.header-highlight {
+    color: rgb(18, 18, 156);
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+#work {
+    padding: 5rem 1.5rem;
+}
+
+.container {
+    max-width: 1024px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.columns {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: -0.75rem;
+}
+
+.column {
+    display: block;
+    padding: 0.75rem;
+    line-height: 70px;
+}
+
+.work-logo {
+    max-width: 70px;
+}
+
+#footer {
+    background-color: rgb(18, 18, 156);
+    color: white;
+    padding: 5rem 1.5rem;
+}
+
+.social {
+    text-align: center;
+}
+
+.button {
+    margin: 10px;
+}
