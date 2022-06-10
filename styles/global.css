@@ -5,7 +5,7 @@ General styles for the portfolio page
 body {
     font-family: 'europa', sans-serif;
     overflow-x: hidden;
-    width: 100%;
+    width: 100% !important;
 }
 
 .safe-margins {
