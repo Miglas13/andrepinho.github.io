@@ -14,7 +14,6 @@ body {
 
 #topnav i {
     text-align: right;
-    padding: 11px 20px;
     vertical-align: middle;
     cursor: pointer;
 }
@@ -32,6 +31,7 @@ body {
     transition: 0.5s;
     padding-top: 60px;
     transition: all 0.25s;
+    display: none;
 }
 
 #navmenu a {
@@ -192,10 +192,12 @@ img {
 
 ul {
     list-style: none;
+    padding: 0 !important;
 }
 
 #work {
     padding: 5rem 1.5rem;
+    text-align: center;
 }
 
 .container {
@@ -232,6 +234,7 @@ ul {
     background-color: rgb(18, 18, 156);
     color: white;
     padding: 5rem 1.5rem;
+    text-align: center;
 }
 
 .social {
